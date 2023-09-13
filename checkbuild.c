@@ -9,8 +9,8 @@ void(*checkbuild(char **arv))(char **arv)
 {
 	int i, j;
 	mybuild T[] = {
-		{"exit", _exit},
-		{"env", _env},
+		{"exit", exitt},
+		{"env", env},
 		{"setenv", _setenv},
 		{"unsetenv", _unsetenv},
 		{NULL, NULL}

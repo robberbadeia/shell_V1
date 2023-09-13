@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * free_list - frees a list_t
+ *free_list - frees a list_t
  *@head: pointer to our linked list
  */
 void free_list(list_path *head)
@@ -20,7 +20,6 @@ void free_list(list_path *head)
  *free_argv - frees the array of pointers arv
  *@arv: array of pointers
  */
-
 void free_argv(char **arv)
 {
 	int i;

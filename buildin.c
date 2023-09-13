@@ -4,7 +4,7 @@
  * exitt - exits the shell with or without a return of status n
  * @arv: array of words of the entered line
  */
-void _exit(char **arv)
+void exitt(char **arv)
 {
 	int i, n;
 
@@ -13,7 +13,7 @@ void _exit(char **arv)
 		n = _atoi(arv[1]);
 		if (n <= -1)
 			n = 2;
-		freearv(arv);
+		free_argv(arv);
 		exit(n);
 	}
 	for (i = 0; arv[i]; i++)
@@ -53,7 +53,7 @@ int _atoi(char *s)
  * env - prints the current environment
  * @arv: array of arguments
  */
-void _env(char **arv __attribute__ ((unused)))
+void env(char **arv __attribute__ ((unused)))
 {
 
 	int i;

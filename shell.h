@@ -84,11 +84,16 @@ void(*checkbuild(char **arv))(char **arv);
 /*
  * Buildins Functions
  */
-void _exit(char **arv);
+void exitt(char **arv);
 int _atoi(char *s);
-void _env(char **arv __attribute__ ((unused)));
+void env(char **arv __attribute__ ((unused)));
 void _setenv(char **arv);
 void _unsetenv(char **arv);
+/*
+ * free functions
+ */
+void free_argv(char **arv);
+void free_list(list_path *head);
 
 extern char **environ;
 #endif
